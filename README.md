@@ -1,0 +1,1 @@
+npm link cmsify cmsify-admin cmsify-frontend cmsify-utils cmsify-cms

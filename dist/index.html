@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CMSify Example JS Project</title>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <h1>CMSify Example</h1>
+    <p cmsify-text="homepage-hero-body-1">Test</p>
+    <!--
+      In a real example that is HTML only and not using a local server,
+      these imports should be available within the 'dist' folder as publicly available
+      packages or imported by URL instead of being available using the express api.
+    -->
+	  <script type="importmap">
+      { "imports": {
+          "cmsify":     "/cmsify/index.js",
+          "cmsify-frontend": "/cmsify-frontend/index.js",
+          "cmsify-admin": "/cmsify-admin/index.js",
+          "cmsify-utils": "/cmsify-utils/index.js"
+      } }
+    </script>
+    <script async type="module" src="./main.js"></script>
+  </body>
+</html>
